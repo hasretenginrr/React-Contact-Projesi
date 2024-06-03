@@ -1,0 +1,46 @@
+
+#container{
+    width:500px; 
+    background-color: aliceblue;
+    padding: 20px;  /* iç kenar bosluğu */
+}
+
+
+input{
+    width: 100%; /* containerlerin genişliği kadar genişletir inputları*/
+    padding:10px; 
+    box-sizing: border-box; /*Kutunun içeriğiyle birlikte padding ve border genişliğinin, belirlenen genişlikte (yani 100% olarak belirtilen) kalmasını sağlar. */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.list{
+    margin: 15px 0;
+}
+.list > li{
+background-color: antiquewhite;
+padding: 5px;
+margin-bottom: 2px;
+display: flex; /* Her listenin elemanını bir satırda oluşturur ve içeriği yatayda esnek bir şekilde hizalar. Elemanlar arasındaki boşluğu otomatik olarak dağıtır. */
+justify-content: space-between;
+
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0 ;
+    
+}
+
+.btn >button{
+    padding: 5px;
+    width: 60px ;
+}
